@@ -9,7 +9,7 @@ import med.voll.api.entidade.DadosCadastroMedico;
 
 
 @RestController
-@RequestMapping("postMedico")
+@RequestMapping("cadastroMedico")
 public class MedController {
 
     @PostMapping
