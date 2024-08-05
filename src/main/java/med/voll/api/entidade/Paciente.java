@@ -17,7 +17,7 @@ import med.voll.api.dto.PacienteDTO;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-@Table(name = "paciente")
+@Table(name = "pacientes")
 public class Paciente {
 
     @Id @GeneratedValue(strategy  = GenerationType.IDENTITY)
@@ -34,6 +34,7 @@ public class Paciente {
         this.nome = dados.nome();
         this.email = dados.email();
         this.cpf = dados.cpf();
+        this.telefone = dados.telefone();
         this.endereco = new Endereco (dados.endereco());
     }
 
